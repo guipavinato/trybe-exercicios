@@ -1,0 +1,5 @@
+  519  history | tail
+  520  history | head
+  521  who
+  522  tail --help
+  523  history | tail -n 5 > arquivo.txt

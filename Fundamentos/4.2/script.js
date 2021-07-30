@@ -1,8 +1,13 @@
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let maior = 0;
+let impar = [];
 for (let index=0; index<numbers.length; index+=1){
-    if (numbers[index]>=maior){
-        maior = numbers[index];
+    if (numbers[index]%2!=0){
+        impar.push(numbers[index]);
     }
 }
-console.log("O maior número é:", maior);
+if (impar.length>0){
+    console.log("Valor(es) ímpar(es):", impar);
+}else{
+    console.log("nenhum valor ímpar encontrado");
+}
+

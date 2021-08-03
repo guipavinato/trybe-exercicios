@@ -6,10 +6,10 @@ function palindromo(palavra){
     }
   }
   if(pal==palavra.length){
-    console.log('Sim, é um palíndromo!!')
+    return true;
   }else{
-    console.log('Não, infelizmente não é um palíndromo!!')
+    return false;
   }
 }
-
-palindromo('arara');
+let palavra = 'arara';
+console.log(palindromo(palavra));

@@ -1,5 +1,4 @@
 import React from "react";
-import { isElementOfType } from "react-dom/cjs/react-dom-test-utils.production.min";
 
 const conteudos = [
   {

@@ -1,8 +1,0 @@
-Internet
-Unix
-Bash
-Windows
-Office
-JavaScript
-HTML5
-CSS

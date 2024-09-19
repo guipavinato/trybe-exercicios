@@ -1,0 +1,38 @@
+h1 {
+    text-align: center;
+}
+
+.first {
+    background-color: rgb(235, 200, 84);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 200px;
+    margin-left: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.second {
+    background-color: rgb(219, 219, 219);
+    margin-inline-start: auto;
+}
+
+.third {
+    background-color: rgb(170, 142, 106);
+    margin-inline-end: auto;
+}
+
+.second, .third {
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 300px;
+    display: inline-block;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+}

@@ -16,12 +16,10 @@ h1 {
 
 .second {
     background-color: rgb(219, 219, 219);
-    margin-inline-start: auto;
 }
 
 .third {
     background-color: rgb(170, 142, 106);
-    margin-inline-end: auto;
 }
 
 .second, .third {
@@ -35,4 +33,16 @@ h1 {
 li {
     list-style-type: none;
     display: inline-block;
+}
+
+h3 {
+    text-align: center;
+}
+
+ul {
+    text-align: center;
+}
+
+.premiacao ul li {
+    display: inline;
 }

@@ -28,5 +28,4 @@ if (mediaAritmetica > 20) {
     console.log('O valor da média aritmética é maior que 20');
 } else {
     console.log('O valor da média aritmética é menor ou igual a 20');
-    
 }

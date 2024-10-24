@@ -29,3 +29,23 @@ if (mediaAritmetica > 20) {
 } else {
     console.log('O valor da média aritmética é menor ou igual a 20');
 }
+
+// 5 -----------
+let maior = 0;
+
+for (let i=0; i< numbers.length; i+=1) {
+    maior = numbers[i] > maior ? maior = numbers[i]: maior = maior;
+}
+
+console.log(`O maior elemente do array é: ${maior}`);
+
+// 6 -----------
+
+let impar = []
+for (let i=0; i< numbers.length; i+=1) {
+    (numbers[i] % 2) == 0 ? impar = impar : impar.push(numbers[i]);
+}
+
+let quantImpar = impar.length != 0 
+    ? console.log(`Existem ${impar.length} elementos ímpares no array`) 
+    : console.log(`Nenhum valor ímpar encontrado`);

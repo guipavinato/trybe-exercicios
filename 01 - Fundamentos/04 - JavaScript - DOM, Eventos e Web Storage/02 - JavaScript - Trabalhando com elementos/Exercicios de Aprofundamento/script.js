@@ -39,11 +39,16 @@ esquerdo.appendChild(imagem);
 const lista = document.createElement('ul');
 direito.appendChild(lista);
 const listaItens = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']
-for (let i = 0; i< listaItens.length; i += 1) {
-    const item = document.createElement('li')
-    item.innerText = listaItens[i];
-    lista.appendChild(item);
+
+const insereItens = (listaItens) => {
+    for (let i = 0; i< listaItens.length; i += 1) {
+        const item = document.createElement('li')
+        item.innerText = listaItens[i];
+        lista.appendChild(item);
+    }
 }
+
+insereItens(listaItens);
 
 // exercicio 9
 const headThreeOne = document.createElement('h3');
@@ -56,3 +61,20 @@ headThreeThree.innerText = 'subtitulo - 3';
 principal.appendChild(headThreeOne);
 principal.appendChild(headThreeTwo);
 principal.appendChild(headThreeThree);
+
+// bonus
+titulo.className = 'title';
+
+headThreeOne.className = 'description';
+headThreeTwo.className = 'description';
+headThreeThree.className = 'description';
+
+principal.removeChild(esquerdo);
+
+direito.style.marginRight = 'auto';
+
+center.parentElement.style.backgroundColor = 'green';
+
+lista.removeChild(lista.lastElementChild);
+lista.removeChild(lista.lastElementChild);
+

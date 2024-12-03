@@ -4,12 +4,26 @@ const thirdLi = document.getElementById('third-li');
 const input = document.getElementById('input');
 const myWebpage = document.getElementById('my-spotrybefy');
 
+const tagsLi = document.querySelector('ul');
 
 // 1. Copie esse arquivo e edite apenas ele.
 // 1.1. Note que uma das caixas está um pouco acima das outras. Por que isso ocorre?
+// R: por causa da propriedade "transform: translateY(-20px)" aplicada a classe tech.
+
 
 // 2. Crie uma função que adicione a classe 'tech' ao elemento `li` quando este for clicado.
 // 2.1. Deve existir apenas um elemento com a classe 'tech'. Como é possível fazer isso? Dica: Lembre-se do método `.classList.remove`.
+tagsLi.addEventListener("click", addTag);
+
+const resetTech = () => {
+  const classTech = document.querySelector('.tech');
+  classTech.classList.remove('tech');
+}
+
+function addTag(event) {
+  resetTech();
+  event.target.className = 'tech';
+};
 
 // 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech'.

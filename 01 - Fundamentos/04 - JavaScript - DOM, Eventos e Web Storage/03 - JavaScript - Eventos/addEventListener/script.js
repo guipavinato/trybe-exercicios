@@ -39,6 +39,12 @@ function alteraTexto(event) {
 // redirecione para alguma página.
 // 4.1. Que tal redirecionar para seu portfólio? Dica: Lembre-se dos métodos `window.location.replace` e `window.open`.
 
+myWebpage.addEventListener("dblclick", redirecionaPagina)
+
+function redirecionaPagina() {
+  window.open('https://www.google.com.br');
+}
+
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo.
 
